@@ -19,4 +19,7 @@ git push origin source
 
 echo -e "\e[1m\e[7m\e[32mPushing the changes to master branch...\e[0m"
 echo -e "\e[1m\e[7m\e[32mUpdating the website...\e[0m"
+
+git subtree pull --prefix=public https://github.com/MattiasPernhult/mattiaspernhult.github.io master
+
 git subtree push --prefix=public https://github.com/MattiasPernhult/mattiaspernhult.github.io master

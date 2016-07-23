@@ -1,0 +1,32 @@
+baseurl = "https://mattiaspernhult.github.io/"
+relativeURLs = false
+languageCode = "en-us"
+title = "Blog"
+disqusShortname = "pernhult"
+paginate = 5
+theme="hugo-geo"
+
+[params]
+	showglobe = true
+
+	github = "https://github.com/MattiasPernhult"
+	twitter = "https://twitter.com/mattiaspernhult"
+	linkedin = "https://se.linkedin.com/mattiaspernhult"
+	email = "pernhultmattias@gmail.com"
+
+	profilepic = "img/profile.png"
+
+	title = "MATTIAS PERNHULT"
+	subtitle = "SOFTWARE DEVELOPER"
+
+	[[params.navlinks]]
+	name = "About"
+	url = "about"
+
+	[[params.navlinks]]
+	name = "Blog"
+	url = ""
+
+	[[params.navlinks]]
+	name = "Tutorials"
+	url = "tutorial/"

@@ -11,10 +11,10 @@
     
     <item>
       <title>File-watcher in Go</title>
-      <link>https://mattiaspernhult.github.io/tutorial/golang_file_watcher/</link>
+      <link>https://mattiaspernhult.github.io/post/golang_file_watcher/</link>
       <pubDate>Sat, 23 Jul 2016 16:38:59 +0200</pubDate>
       
-      <guid>https://mattiaspernhult.github.io/tutorial/golang_file_watcher/</guid>
+      <guid>https://mattiaspernhult.github.io/post/golang_file_watcher/</guid>
       <description>
 
 &lt;p&gt;In this tutorial we will implement a file-watcher in go. The file-watcher will watch a path and when adding a file to that path it will read that file and afterwards perform some clean-up.&lt;/p&gt;
@@ -23,17 +23,12 @@
 
 &lt;h3 id=&#34;project-structure&#34;&gt;Project Structure&lt;/h3&gt;
 
-&lt;p&gt;I have chose to structure this tutorial like this and named the project file-watcher.&lt;/p&gt;
+&lt;p&gt;I chose to structure this tutorial like this and named the project file-watcher.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;file-watcher
-
-&lt;ul&gt;
-&lt;li&gt;drop&lt;/li&gt;
-&lt;li&gt;starwars.csv&lt;/li&gt;
-&lt;li&gt;main.go&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;file-watcher&lt;br&gt;
+|&amp;mdash; drop&lt;br&gt;
+|&amp;mdash; starwars.csv&lt;br&gt;
+|&amp;mdash; main.go&lt;br&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;content-of-csv-file&#34;&gt;Content of csv-file&lt;/h3&gt;
 
@@ -84,7 +79,7 @@ func main() {
     for {
         dir, err := os.Open(PATH)
         if err != nil {
-        		log.Fatal(fmt.Sprintf(&amp;quot;Error when opening PATH: %s&amp;quot;, err.Error()))
+        	log.Fatal(fmt.Sprintf(&amp;quot;Error when opening PATH: %s&amp;quot;, err.Error()))
       	}
       	defer dir.Close()
  
@@ -92,7 +87,6 @@ func main() {
         for _, file := range filesInDir {
             fileData := readDataFromFile(file.Name())
         }
- 
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
@@ -115,8 +109,8 @@ func main() {
     filePath := PATH + &amp;quot;/&amp;quot; + fileName
     f, err := os.Open(filePath)
     if err != nil {
-    		log.Fatal(fmt.Sprintf(&amp;quot;Error when opening path %s: %s&amp;quot;, filePath, err.Error()))
-  	}
+        log.Fatal(fmt.Sprintf(&amp;quot;Error when opening path %s: %s&amp;quot;, filePath, err.Error()))
+    }
     defer f.Close()
 
     fileData, _ := ioutil.ReadAll(f)
@@ -139,7 +133,7 @@ func main() {
     for {
         dir, err := os.Open(PATH)
         if err != nil {
-        		log.Fatal(fmt.Sprintf(&amp;quot;Error when opening PATH: %s&amp;quot;, err.Error()))
+            log.Fatal(fmt.Sprintf(&amp;quot;Error when opening PATH: %s&amp;quot;, err.Error()))
       	}
       	defer dir.Close()
  
@@ -149,7 +143,6 @@ func main() {
 
             go parseAndPrintData(string(fileData))
         }
- 
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
@@ -203,7 +196,7 @@ func main() {
 
 &lt;p&gt;After this you should see this result in the tab with the running golang application&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;OBI-WAN KENOBI
+&lt;pre&gt;&lt;code class=&#34;language-txt&#34;&gt;OBI-WAN KENOBI
 Obi-Wan Kenobi is on the light side of the force.
 Masters for Obi-Wan Kenobi was: [Qui-Gon Jinn Yoda].
 Obi-Wan Kenobi had [Anakin Skywalker Luke Skywalker] as apprentices.

@@ -6,15 +6,39 @@
     <description>Recent content on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Jul 2016 16:38:59 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 24 Jul 2016 22:31:52 +0200</lastBuildDate>
     <atom:link href="https://mattiaspernhult.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>index</title>
+      <link>https://mattiaspernhult.github.io/projects/</link>
+      <pubDate>Sun, 24 Jul 2016 22:31:52 +0200</pubDate>
+      
+      <guid>https://mattiaspernhult.github.io/projects/</guid>
+      <description>
+
+&lt;h1 id=&#34;vscode-todo&#34;&gt;vscode-todo&lt;/h1&gt;
+
+&lt;p&gt;When vscode still was in beta i developed an extension that lists todos in the current workspace. It has also created a little bit of an open-source community where people has contributed with code and issues.&lt;/p&gt;
+
+&lt;p&gt;The extensions source code is on &lt;a href=&#34;https://github.com/MattiasPernhult/vscode-todo&#34;&gt;github&lt;/a&gt; and also published on &lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=MattiasPernhult.vscode-todo&#34;&gt;vscode marketplace&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;friends-api&#34;&gt;friends-api&lt;/h1&gt;
+
+&lt;p&gt;I&amp;rsquo;m a crazy fan and loves the tv-show Friends, and it&amp;rsquo;s definitely, in my opinion, one of the best shows ever. So I really thought that this show deserved an API so I scraped a lot of information from a diversity of websites and after quite some time I managed to get structured data saved in a database. And atop of the database I created this API.&lt;/p&gt;
+
+&lt;p&gt;The API provides data about characters, episodes and seasons through different endpoints.&lt;/p&gt;
+
+&lt;p&gt;The source code and the documentation is available on &lt;a href=&#34;https://github.com/MattiasPernhult/friends-api&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>File-watcher in Go</title>
-      <link>https://mattiaspernhult.github.io/tutorial/golang_file_watcher/</link>
+      <link>https://mattiaspernhult.github.io/post/golang_file_watcher/</link>
       <pubDate>Sat, 23 Jul 2016 16:38:59 +0200</pubDate>
       
-      <guid>https://mattiaspernhult.github.io/tutorial/golang_file_watcher/</guid>
+      <guid>https://mattiaspernhult.github.io/post/golang_file_watcher/</guid>
       <description>
 
 &lt;p&gt;In this tutorial we will implement a file-watcher in go. The file-watcher will watch a path and when adding a file to that path it will read that file and afterwards perform some clean-up.&lt;/p&gt;
@@ -23,17 +47,12 @@
 
 &lt;h3 id=&#34;project-structure&#34;&gt;Project Structure&lt;/h3&gt;
 
-&lt;p&gt;I have chose to structure this tutorial like this and named the project file-watcher.&lt;/p&gt;
+&lt;p&gt;I chose to structure this tutorial like this and named the project file-watcher.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;file-watcher
-
-&lt;ul&gt;
-&lt;li&gt;drop&lt;/li&gt;
-&lt;li&gt;starwars.csv&lt;/li&gt;
-&lt;li&gt;main.go&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;file-watcher&lt;br&gt;
+|&amp;mdash; drop&lt;br&gt;
+|&amp;mdash; starwars.csv&lt;br&gt;
+|&amp;mdash; main.go&lt;br&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;content-of-csv-file&#34;&gt;Content of csv-file&lt;/h3&gt;
 
@@ -84,7 +103,7 @@ func main() {
     for {
         dir, err := os.Open(PATH)
         if err != nil {
-        		log.Fatal(fmt.Sprintf(&amp;quot;Error when opening PATH: %s&amp;quot;, err.Error()))
+        	log.Fatal(fmt.Sprintf(&amp;quot;Error when opening PATH: %s&amp;quot;, err.Error()))
       	}
       	defer dir.Close()
  
@@ -92,7 +111,6 @@ func main() {
         for _, file := range filesInDir {
             fileData := readDataFromFile(file.Name())
         }
- 
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
@@ -115,8 +133,8 @@ func main() {
     filePath := PATH + &amp;quot;/&amp;quot; + fileName
     f, err := os.Open(filePath)
     if err != nil {
-    		log.Fatal(fmt.Sprintf(&amp;quot;Error when opening path %s: %s&amp;quot;, filePath, err.Error()))
-  	}
+        log.Fatal(fmt.Sprintf(&amp;quot;Error when opening path %s: %s&amp;quot;, filePath, err.Error()))
+    }
     defer f.Close()
 
     fileData, _ := ioutil.ReadAll(f)
@@ -139,7 +157,7 @@ func main() {
     for {
         dir, err := os.Open(PATH)
         if err != nil {
-        		log.Fatal(fmt.Sprintf(&amp;quot;Error when opening PATH: %s&amp;quot;, err.Error()))
+            log.Fatal(fmt.Sprintf(&amp;quot;Error when opening PATH: %s&amp;quot;, err.Error()))
       	}
       	defer dir.Close()
  
@@ -149,7 +167,6 @@ func main() {
 
             go parseAndPrintData(string(fileData))
         }
- 
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
@@ -203,7 +220,7 @@ func main() {
 
 &lt;p&gt;After this you should see this result in the tab with the running golang application&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;OBI-WAN KENOBI
+&lt;pre&gt;&lt;code class=&#34;language-txt&#34;&gt;OBI-WAN KENOBI
 Obi-Wan Kenobi is on the light side of the force.
 Masters for Obi-Wan Kenobi was: [Qui-Gon Jinn Yoda].
 Obi-Wan Kenobi had [Anakin Skywalker Luke Skywalker] as apprentices.

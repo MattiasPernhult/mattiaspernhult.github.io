@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Blog</title>
+    <link>https://mattiaspernhult.github.io/about/</link>
+    <description>Recent content in Abouts on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Jul 2016 14:01:00 +0200</lastBuildDate>
+    <atom:link href="https://mattiaspernhult.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About me</title>
+      <link>https://mattiaspernhult.github.io/about/</link>
+      <pubDate>Sat, 23 Jul 2016 14:01:00 +0200</pubDate>
+      
+      <guid>https://mattiaspernhult.github.io/about/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

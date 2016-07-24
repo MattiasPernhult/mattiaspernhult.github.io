@@ -3,11 +3,16 @@
   
   <url>
     <loc>https://mattiaspernhult.github.io/</loc>
-    <lastmod>2016-07-23T16:38:59+02:00</lastmod>
+    <lastmod>2016-07-24T22:31:52+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mattiaspernhult.github.io/tutorial/golang_file_watcher/</loc>
+    <loc>https://mattiaspernhult.github.io/projects/</loc>
+    <lastmod>2016-07-24T22:31:52+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mattiaspernhult.github.io/post/golang_file_watcher/</loc>
     <lastmod>2016-07-23T16:38:59+02:00</lastmod>
   </url>
   

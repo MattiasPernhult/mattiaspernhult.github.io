@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mattias Pernhult - Developer</title>
+
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="vendor/nivo-lightbox/nivo-lightbox.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/nivo-lightbox/themes/default/default.css" type="text/css" />
+  <link href="vendor/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
+  <link href="vendor/owl.carousel/owl-carousel/owl.carousel.css" rel="stylesheet">
+  <link href="vendor/owl.carousel/owl-carousel/owl.theme.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Page Loader -->
+  <div class="loader-container" id="page-loader">
+    <div class="loading-wrapper">
+      <div class="loader-animation" id="loader-animation">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+      <div class="loader-name" id="loader-name">
+        Mattias <strong>Pernhult</strong>
+      </div>
+      <p class="loader-job" id="loader-job">Backend & Mobile Developer</p>
+    </div>
+  </div>
+
+  <section id="body" class="">
+    <div class="container">
+      <div class="main-menu" id="main-menu">
+        <ul class="main-menu-list">
+          <li><a href="#page-resume" class="link-home">Home</a></li>
+          <li><a href="#page-resume" class="link-page">Resume</a></li>
+          <li><a href="#page-skills" class="link-page">Skills</a></li>
+          <!-- <li><a href="#page-portfolio" class="link-page">Portfolio</a></li> -->
+          <!-- <li><a href="#page-blog" class="link-page">Articles</a></li> -->
+          <li><a href="#page-contact" class="link-page">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="section-vcardbody section-home" id="section-home">
+        <div class="vcard-profile-pic">
+          <img src="img/avatar.gif" id="profile2" alt="" />
+          <img src="img/avatar.gif" id="profile1" class="profileActive" alt="" />
+        </div>
+        <div class="vcard-profile-description">
+          <h1 class="profile-title"><span class="color1">Mattias Pernhult</span></h1>
+          <h2 class="profile-subtitle">Backend & Mobile Developer</h2>
+          <hr class="hr1">
+          <div class="vcard-profile-description-text">
+            <p>Bachelor's Degree in Computer Science from Malmö University. 1+ years as professional backend and mobile developer.</p>
+          </div>
+          <div class="vcard-profile-description-feature">
+            <div class="vcard-profile-description-ft-item">
+              <p>email: pernhultmattias@gmail.com / phone: +46706-575728</p>
+            </div>
+          </div>
+        </div>
+        <div class="vcard-footer">
+          <div class="footer-social-icons">
+            <a href="https://github.com/MattiasPernhult" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mattiaspernhult" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/MattiasPernhult" target="_blank"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESUME -->
+      <div class="section-vcardbody section-page" id="page-resume">
+        <h2 class="section-title">Resume</h2>
+        <div class="section-education">
+          <h2 class="section-title2"><i class="fa fa-briefcase"></i>&nbsp; Work Experience</h2>
+          <div class="resume-item">
+            <h3 class="section-item-title-1">Perigee</h3>
+            <h4 class="job">Backend & Android Developer<span class="job-date"> (Sept 2016 - Current)</span></h4>
+            <div class="graduation-description">
+              I'm currently working at Perigee, a start-up company located in Malmö. Perigee develops in-house top quality mobile apps with focus on health and fitness. I'm responsible for all backend infrastructure and developement for the two apps Seven and Cycles.
+              I also to help out on the Android app when needed. Technologies that I've used for the backend are:
+              <li>Go for the API and servers.</li>
+              <li>PostgreSQL together with PgPool and Repmgr to set up a streaming replication with primary and standby database servers.</li>
+              <li>JWT for indentifying and authenticate users.</li>
+              <li>Docker</li>
+              <li>RabbitMQ for efficient communication between services.</li>
+              <li>Remote push notifications. Implemented a custom push server.</li>
+              <li>Load balancing to handle client load efficient.</li>
+              <li>Ansible for server configurations as Linode is for the server infrastructure. Created various scripts that was needed to maintain a good infrastructure.</li>
+              <li>Made use of AWS, and more specifically SES and S3.</li>
+              <li>AngularJS for an intern admin application.</li>
+            </div>
+          </div>
+
+          <div class="resume-item">
+            <h3 class="section-item-title-1">Netville</h3>
+            <h4 class="job">Android Developer<span class="job-date"> (June 2016 - Sept 2016)</span></h4>
+            <div class="graduation-description">
+              Responsible for developing an Android app. Worked with numerous different Android components such as:
+              <li>RecyclerViews and custom LayoutManagers, NavigationDrawer, TabBarLayout, ScrollViews, CoordinatorLayout, AppBarLayout, CollapsingToolbarLayout, Floating-Action-Button, SearchBar and more.</li>
+              <li>Intergrated RetroFit for API calls to the backend.</li>
+              <li>Made use of Android's Services and AsyncTasks to handle concurrency. Also wrote a custom BitmapLoader module to effieciently download images on backend thread.</li>
+              <li>Integrated Google Plus SDK to handle user authorizations.</li>
+              <li>Made use of MVP as architecture for the app.</li>
+            </div>
+          </div>
+
+          <div class="resume-item">
+            <h3 class="section-item-title-1">Data Innovation Arena</h3>
+            <h4 class="job">Developer<span class="job-date"> (June 2015 - Sept 2015)</span></h4>
+            <div class="graduation-description">
+              Between my second and third year of the Bachelor's Degree in Computer Science at Malmö University, I worked on a project called Data Innovation Arena during the summer. My responsibility was to develop a RESTful API. Technologies that I used was:
+              <li>Node.js together with Express for the API and the server.</li>
+              <li>Used PostgreSQL with the PostGIS extension because much of the data was coordinates. Also used MongoDB for data persistence.</li>
+              <li>Used TDD for testing</li>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION: EDUCATION -->
+        <div class="section-education">
+          <h2 class="section-title2"><i class="fa fa-university"></i>&nbsp; Education</h2>
+          <div class="resume-item">
+            <h3 class="section-item-title-1">Computer Science</h3>
+            <h4 class="graduation-time">Malmö University (Bachelor degree) - <span class="graduation-date">Graduation May 2016</span></h4>
+            <div class="graduation-description">
+              <p>Bachelor program in computer science, with a heavy focus on system development, programming, databases, datastructures and algorithms. Graduated with honors. Transcript available upon request.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION: SKILLS-->
+      <div class="section-vcardbody section-page" id="page-skills">
+        <div class="section-skills">
+          <h2 class="section-title">SKILLS</h2>
+          <h3 class="section-item-title-2"><i class="fa fa-laptop"></i>&nbsp;&nbsp; Technogologies</h3>
+          <ul class="skills-list">
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">Go</span>
+              </div>
+            </li>
+            <li>
+              <li>
+                <div class="progress">
+                  <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 80%;">
+                  </div>
+                  <span class="progress-type">PostgreSQL</span>
+                </div>
+              </li>
+              <li>
+                <div class="progress">
+                  <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 70%;">
+                  </div>
+                  <span class="progress-type">PgPool</span>
+                </div>
+              </li>
+              <li>
+                <div class="progress">
+                  <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 70%;">
+                  </div>
+                  <span class="progress-type">Repmgr</span>
+                </div>
+              </li>
+              <li>
+                <div class="progress">
+                  <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 75%;">
+                  </div>
+                  <span class="progress-type">RabbitMQ</span>
+                </div>
+              </li>
+              <li>
+                <div class="progress">
+                  <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 30%;">
+                  </div>
+                  <span class="progress-type">AWS</span>
+                </div>
+              </li>
+              <li>
+                <div class="progress">
+                  <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 70%;">
+                  </div>
+                  <span class="progress-type">Docker</span>
+                </div>
+              </li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 80%;">
+                </div>
+                <span class="progress-type">Javascript</span>
+              </div>
+            </li>
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 75%;">
+                </div>
+                <span class="progress-type">Node.js</span>
+              </div>
+            </li>
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 70%;">
+                </div>
+                <span class="progress-type">Android</span>
+              </div>
+            </li>
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 80%;">
+                </div>
+                <span class="progress-type">Java</span>
+              </div>
+            </li>
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 55%;">
+                </div>
+                <span class="progress-type">MongoDB</span>
+              </div>
+            </li>
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 70%;">
+                </div>
+                <span class="progress-type">MySQL</span>
+              </div>
+            </li>
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 30%;">
+                </div>
+                <span class="progress-type">Ansible</span>
+              </div>
+            </li>
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 45%;">
+                </div>
+                <span class="progress-type">iOS</span>
+              </div>
+            </li>
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 45%;">
+                </div>
+                <span class="progress-type">Swift</span>
+              </div>
+            </li>
+            <li>
+              <li>
+                <div class="progress">
+                  <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 50%;">
+                  </div>
+                  <span class="progress-type">AngularJS</span>
+                </div>
+              </li>
+
+        </div>
+      </div>
+
+      <!--
+      <div class="section-vcardbody section-page" id="page-portfolio">
+        <div class="section-portfolio">
+          <h2 class="section-title">Portfolio</h2>
+          <div class="projects-list">
+            <div class="project-item">
+              <a href="https://www.youtube.com/watch?v=vnEsbVFza5Y" class="project-thumbnail nivobox" data-lightbox-gallery="portfolio" style="background-image: url('img/portfolio/pumpup.gif');">
+                <div class="project-description-wrapper">
+                  <div class="project-description">
+                    <h2 class="project-title">PumpUp</h2>
+                    <span class="see-more">Swift, Objective-C, Java</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="section-vcardbody section-page" id="page-blog">
+        <div class="section-blog">
+          <h2 class="section-title">Articles</h2>
+          <div class="blog-posts">
+          </div>
+        </div>
+      </div>
+      -->
+
+      <!-- SECTION: CONTACT -->
+      <div class="section-vcardbody section-page" id="page-contact">
+        <div class="section-contact">
+          <h2 class="section-title">Contact</h2>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.1504021765936!2d13.299084115986107!3d55.84270458057756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653ead322528281%3A0x2508a90c79467dd3!2sF%C3%B6reningstorget+1D%2C+241+32+Esl%C3%B6v!5e0!3m2!1sen!2sse!4v1490451650225"
+                width="400" height="300" frameborder="0" style="border:0" allowfullscreen>
+              </iframe>
+          </div>
+          <div class="contact-infos">
+            <h4 class="contact-subtitle-1"><i class="fa fa-map"></i>&nbsp;   Address</h4>
+            <p>Föreningstorget 1D, 241 32 Eslöv</p>
+            <h4 class="contact-subtitle-1"><i class="fa fa-phone-square"></i>&nbsp; Phone</h4>
+            <p>+46706-575728</p>
+            <h4 class="contact-subtitle-1"><i class="fa fa-envelope"></i>&nbsp; Mail</h4>
+            <p>pernhultmattias@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="vendor/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/validate.js"></script>
+  <script src="vendor/holder.js"></script>
+  <script src="vendor/nivo-lightbox/nivo-lightbox.min.js"></script>
+  <script src="vendor/perfect-scrollbar/js/min/perfect-scrollbar.jquery.min.js"></script>
+  <script src="vendor/owl.carousel/owl-carousel/owl.carousel.js"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src="vendor/cross-browser.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="vendor/html5shiv.js"></script>
+  <script src="vendor/respond.min.js"></script>
+<![endif]-->
+  <!-- >> /JS
+-->
+</body>
+
+</html>

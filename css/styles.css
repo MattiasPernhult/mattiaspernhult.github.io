@@ -972,6 +972,7 @@ iframe {
   position: relative;
   height: 25px;
   margin-bottom: 10px;
+  background-color: #53bef4;
 }
 .progress > .progress-type {
   position: absolute;
@@ -985,7 +986,7 @@ iframe {
   right: 0px;
   font-weight: 800;
   padding: 3px 10px 2px;
-  color: #f6f5f5;
+  color: #e9e9e9;
   font-size: 14px;
 }
 .skills-list {

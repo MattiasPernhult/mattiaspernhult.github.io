@@ -27,12 +27,15 @@
   <div class="loader-container" id="page-loader">
     <div class="loading-wrapper">
       <div class="loader-animation" id="loader-animation">
-        <span class="loader"><span class="loader-inner"></span></span>
+        <span class="loader">
+          <span class="loader-inner"></span>
+        </span>
       </div>
       <div class="loader-name" id="loader-name">
-        Mattias <strong>Pernhult</strong>
+        Mattias
+        <strong>Pernhult</strong>
       </div>
-      <p class="loader-job" id="loader-job">Backend & Mobile Developer</p>
+      <p class="loader-job" id="loader-job">Backend Developer</p>
     </div>
   </div>
 
@@ -40,12 +43,20 @@
     <div class="container">
       <div class="main-menu" id="main-menu">
         <ul class="main-menu-list">
-          <li><a href="#page-resume" class="link-home">Home</a></li>
-          <li><a href="#page-resume" class="link-page">Resume</a></li>
-          <li><a href="#page-skills" class="link-page">Skills</a></li>
+          <li>
+            <a href="#page-resume" class="link-home">Home</a>
+          </li>
+          <li>
+            <a href="#page-resume" class="link-page">Resume</a>
+          </li>
+          <li>
+            <a href="#page-skills" class="link-page">Skills</a>
+          </li>
           <!-- <li><a href="#page-portfolio" class="link-page">Portfolio</a></li> -->
           <!-- <li><a href="#page-blog" class="link-page">Articles</a></li> -->
-          <li><a href="#page-contact" class="link-page">Contact</a></li>
+          <li>
+            <a href="#page-contact" class="link-page">Contact</a>
+          </li>
         </ul>
       </div>
 
@@ -55,11 +66,15 @@
           <img src="img/profile_1.png" id="profile1" class="profileActive" alt="" />
         </div>
         <div class="vcard-profile-description">
-          <h1 class="profile-title"><span class="color1">Mattias Pernhult</span></h1>
-          <h2 class="profile-subtitle">Backend & Mobile Developer</h2>
+          <h1 class="profile-title">
+            <span class="color1">Mattias Pernhult</span>
+          </h1>
+          <h2 class="profile-subtitle">Backend Developer</h2>
           <hr class="hr1">
           <div class="vcard-profile-description-text">
-            <p>Bachelor's Degree in Computer Science at Malmö University. 1+ years working experience as progressional backend and mobile developer.</p>
+            <p>Bachelor's Degree in Computer Science at Malmö University. 2+ years working experience as progressional backend
+              developer.
+            </p>
           </div>
           <div class="vcard-profile-description-feature">
             <div class="vcard-profile-description-ft-item">
@@ -69,9 +84,15 @@
         </div>
         <div class="vcard-footer">
           <div class="footer-social-icons">
-            <a href="https://github.com/MattiasPernhult" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/mattiaspernhult" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="https://twitter.com/MattiasPernhult" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://github.com/MattiasPernhult" target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mattiaspernhult" target="_blank">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/MattiasPernhult" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -80,37 +101,51 @@
       <div class="section-vcardbody section-page" id="page-resume">
         <h2 class="section-title">Resume</h2>
         <div class="section-education">
-          <h2 class="section-title2"><i class="fa fa-briefcase"></i>&nbsp; Work Experience</h2>
+          <h2 class="section-title2">
+            <i class="fa fa-briefcase"></i>&nbsp; Work Experience</h2>
           <div class="resume-item">
             <h3 class="section-item-title-1">Perigee</h3>
-            <h4 class="job">Backend & Android Developer<span class="job-date"> (Sept 2016 - Current)</span></h4>
+            <h4 class="job">Backend Developer
+              <span class="job-date"> (Sept 2016 - Current)</span>
+            </h4>
             <div class="graduation-description">
-              I'm currently working at <a href="http://perigee.se/">Perigee</a>, a start-up company located in Malmö. Perigee develops in-house top quality mobile apps with focus on health and fitness. My main responsiblity is to take care of all backend
-              infrastructure and development for the two apps Seven and Cycles. My second responsibility is to develop mobile apps with my co-workers.
+              I'm currently working at
+              <a href="http://perigee.se/">Perigee</a>, a start-up company located in Malmö. Perigee develops in-house top quality mobile apps with focus
+              on health and fitness. My main responsiblity is to take care of all backend infrastructure and development
+              for the two apps Seven and Cycles.
               </br>
               </br>
-              Technologies that I've used for the backend are:
-              <li>Go as the programming language for all backend related things.</li>
-              <li>PostgreSQL together with PgPool and Repmgr to set up a streaming replication with primary and standby database servers.</li>
-              <li>JWT for identifying and authenticate users.</li>
-              <li>Docker.</li>
-              <li>RabbitMQ for efficient communication between services.</li>
-              <li>Remote push notifications. Implemented a custom push server.</li>
-              <li>Load balancing to handle client load efficiently.</li>
-              <li>Ansible for server configurations. Linode was used as server provider. Created various scripts that was needed to maintain a good infrastructure.</li>
-              <li>Made use of AWS, and more specifically SES and S3.</li>
-              <li>AngularJS for an intern admin application.</li>
+              Technologies used:
+              <li>Go</li>
+              <li>PostgreSQL, PgPool, Repmgr</li>
+              <li>Bash Scripting</li>
+              <li>Docker</li>
+              <li>RabbitMQ</li>
+              <li>Ansible</li>
+              <li>AWS</li>
+              <li>gRPC</li>
+              <li>InfluxDB</li>
+              <li>Grafana</li>
+              <li>Prometheus</li>
+              <li>OpenTracing</li>
+              <li>Jaeger</li>
+              <li>JWT</li>
+              <li>Remote Push Notifications</li>
             </div>
           </div>
 
           <div class="resume-item">
             <h3 class="section-item-title-1">Netville</h3>
-            <h4 class="job">Android Developer<span class="job-date"> (June 2016 - Sept 2016)</span></h4>
+            <h4 class="job">Android Developer
+              <span class="job-date"> (June 2016 - Sept 2016)</span>
+            </h4>
             <div class="graduation-description">
               Responsible for developing an Android app. Worked with numerous different Android components such as:
-              <li>RecyclerViews and custom LayoutManagers, NavigationDrawer, TabBarLayout, ScrollViews, CoordinatorLayout, AppBarLayout, CollapsingToolbarLayout, Floating-Action-Button, SearchBar and more.</li>
+              <li>RecyclerViews and custom LayoutManagers, NavigationDrawer, TabBarLayout, ScrollViews, CoordinatorLayout, AppBarLayout,
+                CollapsingToolbarLayout, Floating-Action-Button, SearchBar and more.</li>
               <li>Integrated RetroFit for API calls to the backend.</li>
-              <li>Made use of Android's Services and AsyncTasks to handle concurrency. Also wrote a custom BitmapLoader module to download images on backend thread and to cache them for future use.</li>
+              <li>Made use of Android's Services and AsyncTasks to handle concurrency. Also wrote a custom BitmapLoader module
+                to download images on backend thread and to cache them for future use.</li>
               <li>Integrated Google Plus SDK to handle user authorizations.</li>
               <li>Made use of MVP as architecture for the app.</li>
             </div>
@@ -118,11 +153,17 @@
 
           <div class="resume-item">
             <h3 class="section-item-title-1">Data Innovation Arena</h3>
-            <h4 class="job">Developer<span class="job-date"> (June 2015 - Sept 2015)</span></h4>
+            <h4 class="job">Developer
+              <span class="job-date"> (June 2015 - Sept 2015)</span>
+            </h4>
             <div class="graduation-description">
-              Between my second and third year of the Bachelor's Degree in Computer Science at Malmö University, I worked on a project during the summer called Data Innovation Arena (DIA). My responsibility was to develop a RESTful API. Technologies that I used was:
+              Between my second and third year of the Bachelor's Degree in Computer Science at Malmö University, I worked on a project
+              during the summer called Data Innovation Arena (DIA). My responsibility was to develop a RESTful API. Technologies
+              that I used was:
               <li>Node.js together with Express for the API and the server.</li>
-              <li>Used PostgreSQL with the PostGIS extension because much of the data was GIS data. Also used MongoDB for data persistence.</li>
+              <li>Used PostgreSQL with the PostGIS extension because much of the data was GIS data. Also used MongoDB for data
+                persistence.
+              </li>
               <li>Used TDD for testing.</li>
             </div>
           </div>
@@ -130,12 +171,16 @@
 
         <!-- SECTION: EDUCATION -->
         <div class="section-education">
-          <h2 class="section-title2"><i class="fa fa-university"></i>&nbsp; Education</h2>
+          <h2 class="section-title2">
+            <i class="fa fa-university"></i>&nbsp; Education</h2>
           <div class="resume-item">
             <h3 class="section-item-title-1">Computer Science</h3>
-            <h4 class="graduation-time">Malmö University (Bachelor's Degree) - <span class="graduation-date">Graduation May 2016</span></h4>
+            <h4 class="graduation-time">Malmö University (Bachelor's Degree) -
+              <span class="graduation-date">Graduation May 2016</span>
+            </h4>
             <div class="graduation-description">
-              Bachelor program in computer science, with a heavy focus on system development, programming, databases, data structures and algorithms. Graduated with honors. Transcript available upon request.
+              Bachelor program in computer science, with a heavy focus on system development, programming, databases, data structures and
+              algorithms. Graduated with honors. Transcript available upon request.
             </div>
           </div>
         </div>
@@ -145,116 +190,184 @@
       <div class="section-vcardbody section-page" id="page-skills">
         <div class="section-skills">
           <h2 class="section-title">SKILLS</h2>
-          <h3 class="section-item-title-2"><i class="fa fa-laptop"></i>&nbsp;&nbsp; Technologies</h3>
+          <h3 class="section-item-title-2">
+            <i class="fa fa-laptop"></i>&nbsp;&nbsp; Technologies</h3>
           <ul class="skills-list">
             <li>
               <div class="progress">
-                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 95%;">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
                 </div>
                 <span class="progress-type">Go</span>
               </div>
             </li>
+
             <li>
-              <li>
-                <div class="progress">
-                  <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 80%;">
-                  </div>
-                  <span class="progress-type">PostgreSQL</span>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
                 </div>
-              </li>
-              <li>
-                <li>
-                  <div class="progress">
-                    <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 75%;">
-                    </div>
-                    <span class="progress-type">Android</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="progress">
-                    <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 80%;">
-                    </div>
-                    <span class="progress-type">Java</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="progress">
-                    <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 55%;">
-                    </div>
-                    <span class="progress-type">iOS</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="progress">
-                    <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 55%;">
-                    </div>
-                    <span class="progress-type">Swift</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="progress">
-                    <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 75%;">
-                    </div>
-                    <span class="progress-type">RabbitMQ</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="progress">
-                    <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 30%;">
-                    </div>
-                    <span class="progress-type">AWS</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="progress">
-                    <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 70%;">
-                    </div>
-                    <span class="progress-type">Docker</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="progress">
-                    <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 80%;">
-                    </div>
-                    <span class="progress-type">Javascript</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="progress">
-                    <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 75%;">
-                    </div>
-                    <span class="progress-type">Node.js</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="progress">
-                    <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 55%;">
-                    </div>
-                    <span class="progress-type">MongoDB</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="progress">
-                    <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 70%;">
-                    </div>
-                    <span class="progress-type">MySQL</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="progress">
-                    <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 30%;">
-                    </div>
-                    <span class="progress-type">Ansible</span>
-                  </div>
-                </li>
-                <li>
-                  <li>
-                    <div class="progress">
-                      <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 50%;">
-                      </div>
-                      <span class="progress-type">AngularJS</span>
-                    </div>
-                  </li>
+                <span class="progress-type">PostgreSQL</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">Docker</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">Ansible</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">RabbitMQ</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">Bash</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">AWS</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">Kubernetes</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">Java</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">gRPC</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">InfluxDB</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">Grafana</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">Prometheus</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">OpenTracing</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">Jaeger</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">JWT</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">Elasticsearch</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">Kibana</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">MongoDB</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">MySQL</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">JavaScript</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progress">
+                <div class="progress-bar" data-percent="100%" role="progressbar" style="width: 100%;">
+                </div>
+                <span class="progress-type">Node.js</span>
+              </div>
+            </li>
 
         </div>
       </div>
@@ -293,16 +406,19 @@
         <div class="section-contact">
           <h2 class="section-title">Contact</h2>
           <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.1504021765936!2d13.299084115986107!3d55.84270458057756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653ead322528281%3A0x2508a90c79467dd3!2sF%C3%B6reningstorget+1D%2C+241+32+Esl%C3%B6v!5e0!3m2!1sen!2sse!4v1490451650225"
-                width="400" height="300" frameborder="0" style="border:0" allowfullscreen>
-              </iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.827544054342!2d13.294320715807617!3d55.83095258057427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653952f60c51ae9%3A0xac6f9aa5cf69bec9!2sRosenv%C3%A4gen+8%2C+241+37+Esl%C3%B6v!5e0!3m2!1ssv!2sse!4v1533666517360"
+              width="400" height="300" frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
           </div>
           <div class="contact-infos">
-            <h4 class="contact-subtitle-1"><i class="fa fa-map"></i>&nbsp;   Address</h4>
-            <p>Föreningstorget 1D, 241 32 Eslöv</p>
-            <h4 class="contact-subtitle-1"><i class="fa fa-phone-square"></i>&nbsp; Phone</h4>
+            <h4 class="contact-subtitle-1">
+              <i class="fa fa-map"></i>&nbsp; Address</h4>
+            <p>Rosenvägen 8, 241 37 Eslöv</p>
+            <h4 class="contact-subtitle-1">
+              <i class="fa fa-phone-square"></i>&nbsp; Phone</h4>
             <p>+46706-575728</p>
-            <h4 class="contact-subtitle-1"><i class="fa fa-envelope"></i>&nbsp; Mail</h4>
+            <h4 class="contact-subtitle-1">
+              <i class="fa fa-envelope"></i>&nbsp; Mail</h4>
             <p>pernhultmattias@gmail.com</p>
           </div>
         </div>
